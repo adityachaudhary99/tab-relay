@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Tab Relay</h1>
+  </header>
+
+  <section id="current-groups-section">
+    <h2>Current Window</h2>
+    <div id="current-groups" class="group-list">
+      <p class="empty-state">No tab groups in this window</p>
+    </div>
+    <div id="merge-bar" class="merge-bar" style="display: none;">
+      <input type="text" id="merge-name" class="merge-name-input" placeholder="Merged group name" />
+      <select id="merge-color" class="merge-color-select">
+        <option value="grey">Grey</option>
+        <option value="blue" selected>Blue</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+        <option value="pink">Pink</option>
+        <option value="purple">Purple</option>
+        <option value="cyan">Cyan</option>
+        <option value="orange">Orange</option>
+      </select>
+      <button id="merge-btn" class="btn merge-btn">Merge</button>
+    </div>
+  </section>
+
+  <section id="all-groups-section">
+    <h2>All Tab Groups</h2>
+    <div id="all-groups" class="group-list">
+      <p class="empty-state">No other tab groups</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="paste-section">
+    <button id="paste-btn" class="action-btn paste-btn">
+      Paste Group from Clipboard
+    </button>
+  </section>
+
+  <hr>
+
+  <section id="saved-groups-section">
+    <h2>Saved Groups</h2>
+    <div id="saved-groups" class="group-list">
+      <p class="empty-state">No saved groups yet</p>
+    </div>
+  </section>
+
+  <footer>
+    <button id="import-btn" class="action-btn">Import File</button>
+    <button id="export-all-btn" class="action-btn">Export All</button>
+    <input type="file" id="import-file" accept=".json" style="display: none;">
+  </footer>
+
+  <div id="toast" class="toast" style="display: none;"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

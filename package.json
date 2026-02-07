@@ -1,0 +1,32 @@
+{
+  "name": "tab-relay",
+  "version": "1.0.0",
+  "description": "Relay your tabs effortlessly—copy, save, restore, merge, split, and share tab groups across Chromium browsers.",
+  "author": "Aditya Chaudhary",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adityachaudhary99/tab-relay"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --watch --mode development",
+    "lint": "eslint src --ext .ts",
+    "test": "jest",
+    "package": "npm run build && node scripts/package.js"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "@types/jest": "^29.5.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "copy-webpack-plugin": "^12.0.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.4.0",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.0"
+  }
+}
